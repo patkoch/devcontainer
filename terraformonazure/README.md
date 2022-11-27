@@ -41,3 +41,35 @@ docker build -t devcon-terraformonazure:1.0 .
 ``` powershell
 docker run -it devcon-terraformonazure:1.0 
 ``` 
+
+## 4. Usage of the Dev Container with Visual Studio Code
+
+As first step, start Visual Studio Code:
+
+{{< figure src="pictures/01_StartVSCode.png" alt="01_StartVSCode" width="900px">}}
+
+Select the "Docker" icon on the left and scroll to the "devcon-terraformonazure" image. Right click at the tag and choose "Run Interactive":
+
+{{< figure src="pictures/02_RunContainerInteractive.png" alt="02_RunContainerInteractive" width="300px">}}
+
+A new terminal occurs, showing the run command for the Container:
+
+{{< figure src="pictures/03_RunContainerInteractiveExecuted.png" alt="03_RunContainerInteractiveExecuted" width="500px">}}
+
+As next, go to "Containers", there the running instance should be listed. Right click on the running instance and choose "Attach Visual Studio Code":
+
+{{< figure src="pictures/04_AttachVSCode.png" alt="04_AttachVSCode" width="400px">}}
+
+A new Visual Studio Code instance will be started:
+
+{{< figure src="pictures/05_NewVSCodeInstance.png" alt="05_NewVSCodeInstance" width="500px">}}
+
+You should be capable to prove that you're now connected to the Container:
+
+{{< figure src="pictures/06_ContainerConnected.png" alt="06_ContainerConnected" width="500px">}}
+
+You can list the content of the current directory of the Container - this should be similar as seen in the picture below:
+
+{{< figure src="pictures/07_NewTerminalShowDirectory.png" alt="07_NewTerminalShowDirectory" width="400px">}}
+
+Now the Container is ready, let's do some actions with the mentioned tools.
