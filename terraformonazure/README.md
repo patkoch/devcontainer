@@ -155,3 +155,35 @@ Confirm the creation of the cluster by entering "yes":
 This leads to an *Azure* Kubernetes Service named "patricks-new-aks":
 
 ![alt text](pictures/19_azure-portal-aks-created.png)
+
+### 4.6 kubectl - Apply basic kubectl commands
+
+Finally, the usage of *kubectl* is missing.
+Before applying commands using *kubectl*, I need to update my *kubeconfig* file, as the *Azure* Kubernetes Service is newly created and unknown to the *kubeconfig* file.
+
+Therefore, I'll update the *kubeconfig* file by running following *Azure* CLI command:
+
+``` powershell
+az aks get-credentials --name patricks-new-aks -g example-resources 
+``` 
+
+![alt text](pictures/20_az_aks-get-credentials.png)
+
+Now it is possible to use *kubectl*. Imagine I'd like to list all available contexts - for that I'll conduct:
+
+``` powershell
+kubectl config get-contexts
+``` 
+This returns the current cluster:
+
+![alt text](pictures/21_az_kubectl-get-contexts.png)
+
+As next, I'd like to get all pods of the "kube-system" namespace. I'll run following command:
+
+``` powershell
+kubectl get pods -n kube-system
+``` 
+
+This should lead to following result:
+
+![alt text](pictures/22_kubectl-get-pods.png)
