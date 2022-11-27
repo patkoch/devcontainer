@@ -44,6 +44,8 @@ docker run -it devcon-terraformonazure:1.0
 
 ## 4. Usage of the Dev Container with Visual Studio Code
 
+### 4.1 Run the Container using Visual Studio Code
+
 As first step, start Visual Studio Code:
 
 ![alt text](pictures/01_StartVSCode.png)
@@ -70,6 +72,29 @@ You should be capable to prove that you're now connected to the Container:
 
 You can list the content of the current directory of the Container - this should be similar as seen in the picture below:
 
-{![alt text](pictures/07_NewTerminalShowDirectory.png)
+![alt text](pictures/07_NewTerminalShowDirectory.png)
 
 Now the Container is ready, let's do some actions with the mentioned tools.
+
+### 4.2 Azure CLI - Login to your Azure Subscription
+
+Prove that the *Azure* CLI is installed by simply typing "az" in the Terminal:
+
+![alt text](pictures/08_az_01.png" alt="08_az_01" width="500px">}}
+
+Let's establish the connection to an *Azure* subscription. For that, I'd like to use the "azure login" command. Therefore, type:
+
+``` powershell
+az login
+``` 
+
+![alt text](pictures/09_az_02_login.png)
+
+Confirming the command by pressing enter opens your browser. 
+Select your dedicated account, which you'd like to use:
+
+![alt text](pictures/10_az_03_pick_account.png)
+
+After picking you account, you should see logs similar as seen in the picture below:
+
+![alt text](pictures/11_az_04_az-account-show.png)
