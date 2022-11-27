@@ -30,7 +30,7 @@ I've created a Container, which is based on Ubuntu 22.04 and which has following
   * kubectl
 
 
-### 3.1 Build the Container
+### 3.1 Build the Container with a Terminal
 
 ``` powershell
 docker build -t devcon-terraformonazure:1.0 . 
@@ -47,30 +47,29 @@ docker run -it devcon-terraformonazure:1.0
 As first step, start Visual Studio Code:
 
 ![alt text](pictures/01_StartVSCode.png)
-{{< figure src="pictures/01_StartVSCode.png" alt="01_StartVSCode" width="900px">}}
 
 Select the "Docker" icon on the left and scroll to the "devcon-terraformonazure" image. Right click at the tag and choose "Run Interactive":
 
-{{< figure src="pictures/02_RunContainerInteractive.png" alt="02_RunContainerInteractive" width="300px">}}
+![alt text](pictures/02_RunContainerInteractive.png)
 
 A new terminal occurs, showing the run command for the Container:
 
-{{< figure src="pictures/03_RunContainerInteractiveExecuted.png" alt="03_RunContainerInteractiveExecuted" width="500px">}}
+![alt text](pictures/03_RunContainerInteractiveExecuted.png)
 
 As next, go to "Containers", there the running instance should be listed. Right click on the running instance and choose "Attach Visual Studio Code":
 
-{{< figure src="pictures/04_AttachVSCode.png" alt="04_AttachVSCode" width="400px">}}
+![alt text](pictures/04_AttachVSCode.png)
 
 A new Visual Studio Code instance will be started:
 
-{{< figure src="pictures/05_NewVSCodeInstance.png" alt="05_NewVSCodeInstance" width="500px">}}
+![alt text](pictures/05_NewVSCodeInstance.png)
 
 You should be capable to prove that you're now connected to the Container:
 
-{{< figure src="pictures/06_ContainerConnected.png" alt="06_ContainerConnected" width="500px">}}
+![alt text](pictures/06_ContainerConnected.png)
 
 You can list the content of the current directory of the Container - this should be similar as seen in the picture below:
 
-{{< figure src="pictures/07_NewTerminalShowDirectory.png" alt="07_NewTerminalShowDirectory" width="400px">}}
+{![alt text](pictures/07_NewTerminalShowDirectory.png)
 
 Now the Container is ready, let's do some actions with the mentioned tools.
