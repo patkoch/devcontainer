@@ -46,7 +46,7 @@ docker run -it devcon-terraformonazure:1.0
 
 As first step, start Visual Studio Code:
 
-![alt text]("/pictures/01_StartVSCode.png")
+![alt text](pictures/01_StartVSCode.png)
 {{< figure src="pictures/01_StartVSCode.png" alt="01_StartVSCode" width="900px">}}
 
 Select the "Docker" icon on the left and scroll to the "devcon-terraformonazure" image. Right click at the tag and choose "Run Interactive":
