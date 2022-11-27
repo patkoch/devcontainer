@@ -80,7 +80,7 @@ Now the Container is ready, let's do some actions with the mentioned tools.
 
 Prove that the *Azure* CLI is installed by simply typing "az" in the Terminal:
 
-![alt text](pictures/08_az_01.png" alt="08_az_01" width="500px">}}
+![alt text](pictures/08_az_01.png)
 
 Let's establish the connection to an *Azure* subscription. For that, I'd like to use the "azure login" command. Therefore, type:
 
@@ -121,3 +121,15 @@ Conducting that command should clone the whole repository in the dev container. 
 Change the directory to "/iac_terraform_azure/aks/windows)
 
 ![alt text](pictures/14_vscode_show-terraform-file.png)
+
+### 4.4 Vim - Adapt the Terraform configuration file by using Vim
+
+Imagine you'd need to quickly adapt some files in your dev container to find the proper settings. *Vim* would be a good choice for that.
+
+Type "vim aks.tf" in the Terminal and confirm it by pressing enter:
+
+![alt text](pictures/15_vim_terraform-file.png)
+
+This will open the *Terraform* configuration. I'd like to rename the cluster to "patricks-new-aks". Leave *Vim* by typing *:wq!* and by pressing enter when you're done with your changes:
+
+![alt text](pictures/16_vim_rename-aks-cluster.png)
