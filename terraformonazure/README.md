@@ -187,3 +187,31 @@ kubectl get pods -n kube-system
 This should lead to following result:
 
 ![alt text](pictures/22_kubectl-get-pods.png)
+
+### 4.7 Clean Up and Closing the Dev Container
+
+If there is no need for the *Azure* Kubernetes Service any more, let's destroy it by running the proper *Terraform* command:
+
+![alt text](pictures/23_terraform_destroy.png)
+
+Finally, let's stop the dev container by selecting "Stop Container" in Visual Studio Code.
+
+![alt text](pictures/24_vscode_stop-container.png)
+
+## References
+
+[Azure CLI - learn.microsoft.com](https://learn.microsoft.com/en-us/cli/azure/)
+
+[vim - vim.org](https://www.vim.org/)
+
+[Hashicorp - terraform.io](https://www.terraform.io/)
+
+[Kubernetes.io - install-kubectl-linux](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+
+[Git - git-scm.com](https://git-scm.com/downloads)
+
+[Docker - docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/)
+
+[Visual Studio Code - code.visualstudio.com/](https://code.visualstudio.com/)
+
+[Marketplace Visual Studio - ms-azuretools](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
