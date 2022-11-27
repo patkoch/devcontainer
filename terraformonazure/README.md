@@ -98,3 +98,26 @@ Select your dedicated account, which you'd like to use:
 After picking you account, you should see logs similar as seen in the picture below:
 
 ![alt text](pictures/11_az_04_az-account-show.png)
+
+### 4.3 Git - Clone a GitHub Repository
+
+After conducting the login to the *Azure* subscription, I'll need some code to work with.
+For that, I'm going to clone a *GitHub* repository.
+
+For instance, I'll go to https://github.com/patkoch/iac_terraform_azure - copy the web url for the *git clone* command:
+
+
+![alt text](pictures/12_github_clone-repo.png)
+
+Switch back to Visual Studio Code and clone the repository by pasting the command in the Terminal:
+
+``` powershell
+git clone https://github.com/patkoch/iac_terraform_azure.git
+``` 
+Conducting that command should clone the whole repository in the dev container. The directory "iac_terraform_azure" will be available in the file system:
+
+![alt text](pictures/13_vscode_show-cloned-repo.png)
+
+Change the directory to "/iac_terraform_azure/aks/windows)
+
+![alt text](pictures/14_vscode_show-terraform-file.png)
