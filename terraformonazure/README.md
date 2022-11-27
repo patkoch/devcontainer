@@ -133,3 +133,25 @@ Type "vim aks.tf" in the Terminal and confirm it by pressing enter:
 This will open the *Terraform* configuration. I'd like to rename the cluster to "patricks-new-aks". Leave *Vim* by typing *:wq!* and by pressing enter when you're done with your changes:
 
 ![alt text](pictures/16_vim_rename-aks-cluster.png)
+
+### 4.5 Terraform - Provision an Azure Kubernetes Service
+
+After starting the dev container, establishing the connection to the *Azure* subscription, cloning a repo from *GitHub* and adapting the *Terraform* file...it's time to provision a resource in *Azure*. For that, I'm going to use *Terraform*.
+
+I'll conduct the commands:
+
+  * init
+  * validate
+  * apply
+
+for creating an *Azure* Kubernetes Service.
+
+![alt text](pictures/17_terraform_init_validate.png)
+
+Confirm the creation of the cluster by entering "yes":
+
+![alt text](pictures/18_terraform_apply-and-confirm.png)
+
+This leads to an *Azure* Kubernetes Service named "patricks-new-aks":
+
+![alt text](pictures/19_azure-portal-aks-created.png)
